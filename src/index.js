@@ -26,15 +26,29 @@ function createNav(){
 
 
 }
-document.body.appendChild(createNav())
 
-function changeContent(){
-    const content = document.getElementById('content');
-    // content.appendChild(importhome)
-    // content.appendChild(importmenu)
-    // content.appendChild(importstaff)
 
+function createMain(){
+    const main = document.createElement('main');
+    return main
 }
+
+function createFooter(){
+    const footer = document.createElement('footer');
+    return footer
+}
+
+
+function combineSections(){
+    const content = document.getElementById('content')
+    content.appendChild(createNav())
+    content.appendChild(createMain())
+    content.appendChild(createFooter())
+    //loadhome()
+}
+
+combineSections()
+
 
 
 function component(){
@@ -56,3 +70,4 @@ function component(){
 }
 
 document.body.appendChild(component())
+
