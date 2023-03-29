@@ -13,9 +13,9 @@ function createNav(){
     const homebtn = document.createElement('button')
     homebtn.textContent = 'Home'
     const menubtn = document.createElement('button')
-    menu.textContent = 'Menu'
+    menubtn.textContent = 'Menu'
     const staffbtn = document.createElement('button')
-    staff.textContent = 'Staff'
+    staffbtn.textContent = 'Staff'
 
     nav.appendChild(homebtn);
     nav.appendChild(menubtn);
